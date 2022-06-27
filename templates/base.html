@@ -50,7 +50,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="{% url 'products' %}">
+                <form method="GET" action="#">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
@@ -109,8 +109,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
+                
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
@@ -120,23 +119,7 @@
         </div>
     </header>
 
-    {% if messages %}
-        <div class="col-9 message-container">
-            {% for message in messages %}
-                {% with message.level as level %}
-                    {% if level == 40 %}
-                        {% include 'includes/toasts/toast_error.html' %}
-                    {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
-                    {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
-                    {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
-                    {% endif %}
-                {% endwith %}
-            {% endfor %}
-        </div>
-    {% endif %}
+    
 
     {% block page_header %}
     {% endblock %}
@@ -159,7 +142,7 @@
               <div class="row mt-3">
                 <div class="col-12 col-md-4 mx-auto mb-4">
                     <div class="col-12 text-center col-md-6 text-left pt-3">
-                        <p class="text-dark">Got a question?<br> visit our<a class="text-dark" href="{% url 'faq' %}"><strong> FAQ </strong></a>page or <a class="text-dark" href="{% url 'contact_us' %}"><strong> Contact Us</strong></a></p>
+                        <p class="text-dark">Got a question?<br> visit our<a class="text-dark" href="#"><strong> FAQ </strong></a>page or <a class="text-dark" href="#"><strong> Contact Us</strong></a></p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mx-auto m-3">
