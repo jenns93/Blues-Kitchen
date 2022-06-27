@@ -9,53 +9,73 @@
 {% endblock %}
 {% block content %}
 <section class="py-5">
-<div class="container h-100 mt-5">
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('media/burger-yellow.jpg');">
-          <div class="carousel-caption">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+    <div class="container h-100 mt-5">
+      <section class="pricing py-5">
+        <div class="container">
+          <div class="row">
+            <!-- card 1 -->
+            <div class="col-lg-3">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Burgers</h5>
+                  <a href="#">
+                    <img class="card-img-top img-fluid" src="media/burger-yellow.jpg" height="100" alt="Burgers">
+                  </a>
+                  <hr>
+                  <div class="text-center my-2">
+                    <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="#">Veiw Burgers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-lg-3">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Fries</h5>
+                  <a href="#">
+                    <img class="card-img-top img-fluid" src="media/fries-yellow.jpg" alt="Fries">
+                  </a>
+                  <hr>
+                  <div class="text-center my-2">
+                    <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="#">Veiw Fries</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-lg-3">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Chicken</h5>
+                  <a href="#">
+                    <img class="card-img-top img-fluid" src="media/chicken-yellow.jpg" alt="Chicken">
+                  </a>
+                  <hr>
+                  <div class="text-center my-2">
+                    <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="#">Veiw Chicken</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="col-lg-3">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                  <h5 class="card-title text-muted text-uppercase text-center">Milkshakes</h5>
+                  <a href="#">
+                    <img class="card-img-top img-fluid" src="media/milkshake-yellow.jpg" alt="Milkshakes">
+                  </a>
+                  <hr>
+                  <div class="text-center my-2">
+                    <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="#">Veiw Milkshakes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url('media/burger-yellow.jpg');">
-          <div class="carousel-caption">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('media/burger-yellow.jpg');">
-          <div class="carousel-caption">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-</div>
-</section>
-  
-  <!-- Page Content -->
-  <section class="py-5">
-    <div class="container">
-      <h1 class="fw-light">Half Page Image Slider</h1>
-      <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images
-        in this snippet are from <a href="https://unsplash.com">Unsplash</a>!</p>
+      </section>
     </div>
   </section>
-
 {% endblock %}
