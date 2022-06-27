@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/burger-hero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(80vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+}
+
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
